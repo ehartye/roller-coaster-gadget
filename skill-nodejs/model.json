@@ -1,0 +1,45 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "the roller coaster",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "SetLapIntent",
+          "slots": [
+            {
+              "name": "LapCount",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "Go for {LapCount}",
+            "Stop after {LapCount}",
+            "{LapCount} time",
+            "{LapCount} times",
+            "{LapCount} ride",
+            "{LapCount} rides",
+            "{LapCount} lap",
+            "{LapCount} laps",
+            "{LapCount} please"
+          ]
+        }
+      ]
+    }
+  }
+}
