@@ -41,8 +41,6 @@ const SetLapIntentHandler = {
             && Alexa.getIntentName(handlerInput.requestEnvelope) === 'SetLapIntent';
     },
     handle: function (handlerInput) {
-
-        // Bound speed to (1-100)
         let lapCount = Alexa.getSlotValue(handlerInput.requestEnvelope, 'LapCount');
         lapCount = Math.max(1, parseInt(lapCount));
 
